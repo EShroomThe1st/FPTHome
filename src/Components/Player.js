@@ -3,7 +3,7 @@ import ListOfPlayer from '../Share/ListOfPlayer'
 
 
 
-const Player = () => {
+function Player () {
   return (
     <div className='container'>
         {ListOfPlayer.map((player)=>(
