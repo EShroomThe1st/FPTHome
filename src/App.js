@@ -3,6 +3,8 @@ import Navigation from './Components/Navigation'
 import Player from './Components/Player'
 import Footer from './Components/Footer'
 import Main from './Components/Main'
+import './App.css'
+
 
 const App = () => {
   return (

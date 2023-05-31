@@ -1,7 +1,9 @@
-import React from 'react'
+import React, {useState} from 'react'
 import ListOfPlayer from '../Share/ListOfPlayer'
 
 function PlayersPresentation ({players}) {
+  const [player, setPlayer] = useState([])  
+
     return (
       <div className='container'>
           {ListOfPlayer.map((player)=>(
@@ -10,10 +12,20 @@ function PlayersPresentation ({players}) {
                   <img src={player.img}/>
                   <h3>{player.name}</h3>
                   <p className='title'>{player.club}</p>
-                  <p className='btn'><button>Detail</button></p>
+                  <p className='btn'><button onClick={()=>{setPlayer(player)}}><a href="#popup1" id="openPopUp">Detail</a></button></p>
               </div>
           </div>
           ))}
+          <div id='popup1' className='overlay'>
+            <div className='popup'>
+              <img src={player.img}/>
+              <h2>{player.name}</h2>
+              <a className='close' href="#">&times;</a>
+              <div className='content'>
+                  {player.info}
+              </div>
+            </div>
+          </div>
       </div>
     )
   }
