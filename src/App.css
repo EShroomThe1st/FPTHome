@@ -1,15 +1,20 @@
 .NavBar nav ul{
     display: flex;
     list-style: none;
-    background-color: black;
     padding: 1rem;
     margin-left: 0;
     margin-top: 0;
+    margin-bottom: 0;
+}
+
+.NavBar nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .NavBar nav ul li a{
     text-decoration: none;
-    color: white;
     margin-right: 2rem;
 }
 
