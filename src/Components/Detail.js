@@ -1,8 +1,12 @@
-import React from "react";
+import React, {useState} from "react";
 import { useParams } from "react-router-dom";
 import { data } from "../Share/ListOfPlayer";
+import Modal from './Modal';
+import { Icon } from "react-materialize";
 
 const Detail = () => {
+    const [isOpen, setIsOpen] = useState(false);
+
   const userName = useParams();
   const player = data.find((obj) => {
     return obj.id == userName.id;
@@ -18,6 +22,9 @@ const Detail = () => {
             </div>
         </div>
         <div className="product-details">
+            <a onClick={() => setIsOpen(true)} className="btn-floating halfway-fab waves-effect waves-light red" style={{position:"absolute", right:"24rem", bottom:"6rem"}}>
+                  <Icon>ondemand_video</Icon>
+            </a>
           <h4>{player.club}</h4>
           <div className="product-price">Market value: € {cost}</div>
           <div className="product-bottom-details">
@@ -25,6 +32,7 @@ const Detail = () => {
           </div>
         </div>
       </div>
+      {isOpen && <Modal setIsOpen={setIsOpen} player={player} />}
     </div>
   );
 };

@@ -20,10 +20,10 @@ function Navigation() {
               <a href="#news"><Icon left>info_outline</Icon>News</a>
             </li>
             <li to='/about'>
-              <a href="#about"><Icon left>dvr</Icon>About</a>
+              <a href="/about"><Icon left>dvr</Icon>About</a>
             </li>
             <li to='/contact'>
-              <a href="#contact"><Icon left>contacts</Icon>Contact</a>
+              <a href="/contact"><Icon left>contacts</Icon>Contact</a>
             </li>
       </Navbar>
   );
