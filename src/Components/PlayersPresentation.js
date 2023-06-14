@@ -5,7 +5,7 @@ function PlayersPresentation ({players}) {
   const [player, setPlayer] = useState([])  
 
     return (
-      <div className='container'>
+      <div className='player-container'>
           {ListOfPlayer.map((player)=>(
           <div className='column'>
               <div className='card'>

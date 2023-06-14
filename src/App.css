@@ -28,7 +28,7 @@
     margin-right: 10rem;
 }
 
-.container{
+.player-container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin-left: 1.4rem;
@@ -134,4 +134,55 @@ body{
         .popup .content {
         max-height: 30%;
         overflow: auto;
+        }
+
+        .head{
+            display: flex;
+            font-family: fantasy;
+        }
+
+        .badge{
+            background-color: red;
+            color: white;
+            height: fit-content;
+            padding: .5rem;
+            width: 9rem;
+            margin-right: 6rem;
+            margin-top: 2rem;
+        }
+
+        .product-tumb img{
+            width: 70%;
+        }
+
+        .container{
+            width: 60%;
+            background-color: rgb(223, 223, 223);
+            margin: 0 auto;
+            margin-top: 2rem;
+        }
+
+        .product-details{
+            background-color: white;
+            border-color: rgb(223, 223, 223);
+            border-width: .2rem;
+            border-style: solid;
+            padding: 2rem;
+        }
+
+        .product-details h4{
+            font-family: fantasy;
+            font-weight: lighter;
+        }
+
+        .product-price{
+            font-family: fantasy;
+            color: rgb(255, 200, 97);
+            font-weight: lighter;
+        }
+
+        .product-bottom-details{
+            font-family: fantasy;
+            color: rgb(200, 200, 200);
+            font-weight: lighter;
         }
