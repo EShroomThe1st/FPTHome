@@ -22,7 +22,7 @@ const Detail = () => {
             </div>
         </div>
         <div className="product-details">
-            <a onClick={() => setIsOpen(true)} className="btn-floating halfway-fab waves-effect waves-light red" style={{position:"absolute", right:"24rem", bottom:"6rem"}}>
+            <a onClick={() => setIsOpen(true)} className="btn-floating halfway-fab waves-effect waves-light red" style={{position:"absolute", right:"27rem", bottom:"7.3rem"}}>
                   <Icon>ondemand_video</Icon>
             </a>
           <h4>{player.club}</h4>

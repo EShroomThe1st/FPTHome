@@ -85,8 +85,8 @@ body{
 
 .badge{
     position: absolute;
-    top: 39rem;
-    left: 22rem;
+    top: 43rem;
+    left: 24rem;
     font-size: large;
     color: white;
     z-index: 999999;
